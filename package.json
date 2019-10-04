@@ -21,7 +21,8 @@
     "unist-util-visit": "^1.4.0",
     "urllib": "^2.33.0",
     "vfile": "^4.0.0",
-    "zlogger": "^2.1.0"
+    "zlogger": "^2.1.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -42,7 +43,9 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
-    "pkgfiles": "egg-bin pkgfiles"
+    "pkgfiles": "egg-bin pkgfiles",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "files": [
     "lib"
@@ -59,5 +62,6 @@
   ],
   "repository": "git@github.com:atian25/vuepress-plugin-yuque-deploy.git",
   "author": "TZ <atian25@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
