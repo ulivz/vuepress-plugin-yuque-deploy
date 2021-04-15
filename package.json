@@ -19,7 +19,7 @@
     "unist-builder-blueprint": "^1.0.0",
     "unist-util-select": "^2.0.0",
     "unist-util-visit": "^1.4.0",
-    "urllib": "^2.33.0",
+    "urllib": "^2.37.1",
     "vfile": "^4.0.0",
     "zlogger": "^2.1.0"
   },
